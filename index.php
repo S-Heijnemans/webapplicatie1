@@ -22,7 +22,7 @@
             <a class='text-nav-index'>Contacten</a>
         </div>
         <div class="login--button-nav">
-            <a class='login-text'>Login</a>
+            <a class='login-text' href="pages/login.php"  >Login</a>
         </div>
     </nav>
     <div class='main-page'>
@@ -31,32 +31,5 @@
         </div>
         <div class="img-line-2"></div>
     </div>
-    <form class='register_form' name="register" method="POST" action="pages/register.php">
-        <h3>Register now!</h3>
-        <div class='row'>
-            <p>Naam: </p>  
-            <input type="text" name="naam"/>          
-        </div>
-        <div class='row'>
-            <p>Leeftijd: </p>  
-            <input type="text" name="leeftijd"/>          
-        </div>
-        <div class='row'>
-            <p>Algemene voorwaarden: </p>  
-            <input type="checkbox" name="av"/>          
-        </div>
-        <div class='row'>
-            <p>geslacht: </p>  
-            <input type="text" name="geslacht"/>          
-        </div>
-        <div class='row'>
-            <input type="submit" name="submit" value='send'/>          
-        </div>
-
-        <div class="test">
-
-        </div>
- 
-    </form>
 </body>
 </html>

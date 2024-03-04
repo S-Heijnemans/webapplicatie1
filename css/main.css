@@ -81,6 +81,7 @@ nav {
     background-color: #FBCAEF;
     border-radius: 20px;
     border: 3px solid #000000;
+    text-decoration: none;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -91,6 +92,7 @@ nav {
 .login-text {
     font-size: 24px;
     color: #000000;
+    text-decoration: none;
 }
 
 .main-page {
@@ -107,4 +109,29 @@ nav {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+}
+
+
+/* login page css */
+.container-login-page {
+    height: 100vh;
+    width: 100%;
+    background-color: #48304D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.block-login {
+    height: auto;
+    width: 60%;
+    background-color: #E637BF;
+    box-shadow: 0 0px 25px #D2F1E4,
+                    inset 0 0px 15px #D2F1E4,
+                    inset 0 0px 15px #D2F1E4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
