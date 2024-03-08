@@ -96,9 +96,8 @@ nav {
 }
 
 .main-page {
-    height: 800px;
+    height: 1000px;
     width: 90%;
-    border: 3px solid #ffffff;
     position: relative; top: 40px;
     display: flex;
     flex-direction: column;
@@ -109,6 +108,36 @@ nav {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+}
+.image-1-home {
+    image-rendering: crisp-edges;
+    filter: brightness(105%) contrast(120%) saturate(120%);
+}
+.tweede-main-block {
+    height: 1200px;
+    width: 100%;
+    background-color: #48304D;
+    display: flex;
+    flex-direction: row;
+    position: relative; top: 80px;
+}
+.tweede-main-info {
+    height: 90%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10%;
+}
+.info-blok-tweede-main {
+    height: 35%;
+    width: 85%;
+    background-color: #FBCAEF;
+    border: 5px solid #E637BF;
+    border-top-right-radius: 130px;
+    border-bottom-right-radius: 130px;
+    position: relative; left: 5px;
 }
 
 
@@ -124,7 +153,7 @@ nav {
 }
 .block-login {
     height: auto;
-    width: 60%;
+    width: 30%;
     background-color: #E637BF;
     box-shadow: 0 0px 25px #D2F1E4,
                     inset 0 0px 15px #D2F1E4,
