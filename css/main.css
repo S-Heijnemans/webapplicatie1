@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #48304D;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,26 +20,51 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 } 
 .opmaakblok-header-index, .opmaakblok-header-index-2 {
-    height: 250px;
-    width: 30%;
-    background-color: #E637BF;
-    border-radius: 90%;
+    height: 0;
+    width: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 75px solid #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .opmaakblok-header-index {
-    position: relative; right: 200px;
+    position: relative; right: 55px; bottom: 24px;
+    rotate: 135deg;
 }
 .opmaakblok-header-index-2 {
-    position: relative; left: 200px;
+    position: relative; left: 55px; bottom: 24px;
+    rotate: -135deg;
+}
+.opmaakblok-header-2, .opmaakblok-header-2-2 {
+    height: 0;
+    width: 0;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    border-top: 45px solid #ffffff;
+}
+.opmaakblok-header-2 {
+    position: relative; right: 4px; bottom: 40px;
+}
+.opmaakblok-header-2-2 {
+    position: relative; left: 4px; bottom: 40px;
 }
 .logo-header {
     height: 90%;
-    width: 30%;
+    width: 350px;
     border-radius: 20px;
-    border: 3px solid #000000;
-    background-color: #D2F1E4;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 40px;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    background-color: #ffffff;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -51,34 +76,39 @@ header {
     color: #000000;
 }
 
+
 nav {
     height: 100px;
     width: 100%;
-    border: 3px solid #ffffff;
+    border: 3px solid #000000;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    gap: 20px;
+}
+.blok-nav-1 {
+    height: auto;
+    display: flex;
     justify-content: center;
 }
+
 .nav-pages-balk {
+    gap: 10px;
+
     height: 80%;
-    width: 40%;
-    gap: 6%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    position: relative; left: 95px;
-
+    justify-content: space-around;
 }
 .text-nav-index {
-    font-size: 42px;
-    color: #ffffff;
+    font-size: 34px;
+    color: #000000;
 }
 .login--button-nav {
-    height: 65%;
-    width: 10%;
-    background-color: #FBCAEF;
+    background-color: #ffffff;
     border-radius: 20px;
     border: 3px solid #000000;
     text-decoration: none;
@@ -87,9 +117,9 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: relative; left: 280px;
 }
 .login-text {
+    padding: 10px 10px;
     font-size: 24px;
     color: #000000;
     text-decoration: none;
@@ -145,7 +175,18 @@ nav {
 .container-login-page {
     height: 100vh;
     width: 100%;
-    background-color: #48304D;
+    background-color: #fffdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-style-blok {
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    border: 24px solid #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,11 +194,10 @@ nav {
 }
 .block-login {
     height: auto;
-    width: 30%;
-    background-color: #E637BF;
-    box-shadow: 0 0px 25px #D2F1E4,
-                    inset 0 0px 15px #D2F1E4,
-                    inset 0 0px 15px #D2F1E4;
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid #000000;
     padding: 20px;
     display: flex;
     flex-direction: column;

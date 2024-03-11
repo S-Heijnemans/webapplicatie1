@@ -9,26 +9,17 @@
 <body>
 
 <div class='container-login-page'>
-    <div class='block-login'>
-        <form class='login_form' name="logine" method="POST" action="../index.php">
-            <h3>Login</h3>
-                 <div class='row'>
-                 <p>Naam: </p>  
-                 <input type="text" name="naam"/>          
-            </div>
-         <div class='row'>
-                 <p>e-mail: </p>  
-                 <input type="email" name="email"/>          
-         </div>
-         <div class='row'>
-                 <p>wachtwoord: </p>  
-                 <input type="password" name="wachtwoord"/>          
+    <div class='login-style-blok'>
+        <div class='block-login'>
+              <form action="login_logic.php" name='login_logic' method="POST">
+                    <label>Username:</label>
+                    <input type="text" name='username' placeholder="Username" required>
+                    <label>Password:</label>
+                    <input type="password" name='password' placeholder="Password" required>
+                    <input type="submit" value="Login">
+                </form>
         </div>
-        <div class='row'>
-            <input type="submit" name="submit" value='send'/>          
-        </div>  
     </div>
-
 </div>
 </body>
 </html>
