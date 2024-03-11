@@ -9,6 +9,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    /* overflow-y: hidden; */
+
 }
 
 
@@ -126,49 +128,13 @@ nav {
 }
 
 .main-page {
-    height: 1000px;
+    height: auto;
     width: 90%;
     position: relative; top: 40px;
     display: flex;
     flex-direction: column;
 }
-.img-line-1,  .img-line-2{
-    height: 50%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-}
-.image-1-home {
-    image-rendering: crisp-edges;
-    filter: brightness(105%) contrast(120%) saturate(120%);
-}
-.tweede-main-block {
-    height: 1200px;
-    width: 100%;
-    background-color: #48304D;
-    display: flex;
-    flex-direction: row;
-    position: relative; top: 80px;
-}
-.tweede-main-info {
-    height: 90%;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 10%;
-}
-.info-blok-tweede-main {
-    height: 35%;
-    width: 85%;
-    background-color: #FBCAEF;
-    border: 5px solid #E637BF;
-    border-top-right-radius: 130px;
-    border-bottom-right-radius: 130px;
-    position: relative; left: 5px;
-}
+
 
 
 /* login page css */
