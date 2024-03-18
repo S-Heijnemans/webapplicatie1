@@ -1,3 +1,7 @@
+<?php
+    include "pages/conn.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +14,12 @@
 <?php
     include "pages/header.php";
 ?>
-
     <nav>
         <div class='blok-nav-1'>
             <div class='nav-pages-balk'>
              <a class='text-nav-index'>Home</a>
              <a class='text-nav-index'>Nieuws</a>
-             <a class='text-nav-index'>Menu</a>
+             <a class='text-nav-index' href="pages/menu.php">Menu</a>
              <a class='text-nav-index'>Contacten</a>
             </div>
         </div>
@@ -24,6 +27,7 @@
                <a class='login-text login--button-nav' href="pages/login.php"  >Login</a>
         </div>
     </nav>
+
     <div class='main-page'>
         <div class='opmaakblok-main-page'></div>
             <div class='main-container'>
@@ -48,6 +52,19 @@
                </div>
 
               <div class='container-right'>
+                <!-- <?php
+
+                $stmt = $connection->query("SELECT * FROM producten");
+
+                while ($row = $stmt->fetch()) 
+                {
+                echo $row['naam']."<br />\n";
+                echo $row['omschrijving']."<br />\n";
+                echo $row['prijs']."<br />\n";
+                echo "<br>";
+                }
+
+                ?> -->
                 <div class='infoblock-1-main-rechts'>
                     <div class='titel-eerste-infokopje-main-rechts'>
                         <a class='titel-main-rechts-1'></a>
