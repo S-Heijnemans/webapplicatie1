@@ -97,7 +97,7 @@ nav {
 }
 
 .nav-pages-balk {
-    gap: 10px;
+    gap: 20px;
 
     height: 80%;
     display: flex;
@@ -225,9 +225,11 @@ nav {
     color: #000000;
 }
 .textblok-main-links {
-    height: 280px;
+    height: 320px;
     width: auto;
-    margin-right: 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+
 }
 /* menu page css*/
 .container-menu-main {
