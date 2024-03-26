@@ -11,13 +11,14 @@
 <div class='container-login-page'>
     <div class='login-style-blok'>
         <div class='block-login'>
-              <form action="login_logic.php" name='login_logic' method="POST">
+              <form class='form-login-tabel' action="login_logic.php" name='login_logic' method="POST">
                     <label>Username:</label>
                     <input type="text" name='username' placeholder="Username" required>
                     <label>Password:</label>
                     <input type="password" name='password' placeholder="Password" required>
                     <input type="submit" value="Login">
                 </form>
+                <a href='register.php'>register</a>
         </div>
     </div>
 </div>

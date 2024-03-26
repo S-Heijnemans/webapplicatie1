@@ -19,6 +19,8 @@ if (!$user) {
     header("Location: login.php");
  } else {
     $_SESSION["user"] = $username;
+    $_SESSION["id"] = $user["id"];
+
     header("Location: dashboard.php");
  }
 ?>
