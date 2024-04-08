@@ -13,13 +13,25 @@
 <body>
 <?php
     include "header.php";
-    include "nav.php";
+    echo "<br>";
+?>
+<nav>
+        <div class='blok-nav-1'>
+            <div class='nav-pages-balk'>
+             <a class='text-nav-index' href="dashboard.php">Home</a>
+             <a class='text-nav-index'>Nieuws</a>
+             <a class='text-nav-index' href="menu.php">Menu</a>
+             <a class='text-nav-index'>Contacten</a>
+            </div>
+        </div>
+    </nav>
+<?php
     echo "<br>";
 ?>
     <div class='opmaakblok-main-page'></div>
 <div class='container-menu-main'>
 <?php
-$stmt = $connection->query("SELECT * FROM producten");
+    $stmt = $connection->query("SELECT * FROM producten");
 
 while ($row = $stmt->fetch()) 
 {
@@ -43,11 +55,15 @@ while ($row = $stmt->fetch())
             echo "<H3>";
                 echo $row['prijs']."<br />\n";
             echo "</H3>";
+            // echo "<a href='product_update.php?id=".$row['id']."'>update</a>";
+
         echo "</div>";
 
-    echo "</div>";
-   
+        echo "<br>";
 
+        echo "<a href='product_update.php?id=".$row['id']."'>update</a>";
+    echo "</div>";
+    
 
 // echo $row['omschrijving']."<br />\n";
 // echo $row['prijs']."<br />\n";

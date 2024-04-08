@@ -46,26 +46,13 @@
                                  Et malesuada fames ac turpis egestas integer eget aliquet nibh. Nunc 
                                  lobortis mattis aliquam faucibus purus in. Molestie a iaculis at erat pellentesque adipiscing 
                                  commodo. Felis bibendum ut tristique et egestas. Risus at ultrices mi tempus imperdiet nulla 
-                                 malesuada. Rhoncus est pellentesque elit ullamcorper dignissim cras.</a>
+                                 mal  esuada. Rhoncus est pellentesque elit ullamcorper dignissim cras.</a>
                         </div>
                     </div>
                 </div>
                </div>
 
               <div class='container-right'>
-                <!-- <?php
-
-                $stmt = $connection->query("SELECT * FROM producten");
-
-                while ($row = $stmt->fetch()) 
-                {
-                echo $row['naam']."<br />\n";
-                echo $row['omschrijving']."<br />\n";
-                echo $row['prijs']."<br />\n";
-                echo "<br>";
-                }
-
-                ?> -->
                 <div class='infoblock-1-main-rechts'>
                     <div class='titel-eerste-infokopje-main-rechts'>
                         <a class='titel-main-rechts-1'></a>
